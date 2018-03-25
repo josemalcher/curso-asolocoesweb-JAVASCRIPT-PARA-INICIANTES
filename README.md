@@ -74,6 +74,23 @@ https://www.asolucoesweb.com.br/detalhes/javascript-para-iniciantes
 
 ## <a name="parte2">02 - Variáveis e escopo</a>
 
+```js
+    var idade = 34; //global
+    function idadePEssoa() {
+        var idade = 24; //local
+        console.log(idade);
+    }
+
+    idadePEssoa();
+
+    nomePessoa = "jose"; // "super-global" -  Sempre com "var"
+    function nome() {
+        console.log(nomePessoa);
+    }
+    nome();
+
+```
+
 
 [Voltar ao Índice](#indice)
 

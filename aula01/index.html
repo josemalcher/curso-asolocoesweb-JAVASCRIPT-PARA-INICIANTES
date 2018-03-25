@@ -6,8 +6,21 @@
 </head>
 <body>
 <script>
-    var nome = "josemalcher";
-    console.log(nome);
+
+    var idade = 34; //global
+    function idadePEssoa() {
+        var idade = 24; //local
+        console.log(idade);
+    }
+
+    idadePEssoa();
+
+    nomePessoa = "jose"; // "super-global" -  Sempre com "var"
+    function nome() {
+        console.log(nomePessoa);
+    }
+    nome();
+
 </script>
 </body>
 </html>
