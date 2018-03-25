@@ -5,21 +5,20 @@
     <title>Aula 01</title>
 </head>
 <body>
-<div id="divid">Dentro da DIV id</div>
-<a href="" id="alink">Link1</a>
 
 <script>
 
-    var pessoa = function () {
-        console.log("Função Anônima!");
+function add() {
+    var numero = 1;
+    return function () {
+        console.log(numero + 1);
+    }
+}
+var soma = add();
+soma();
+soma();
+soma();
 
-    };
-    pessoa();
-
-    //função auto-executa
-    (function () {
-        console.log("Auto Executou")
-    })();
 
 </script>
 </body>

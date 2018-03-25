@@ -161,6 +161,32 @@ DOM - https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM
 
 ## <a name="parte6">06 - Closures</a>
 
+- https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Closures
+
+```js
+  function pessoa(idade) {
+      var idade = idade;
+
+      return function () {
+          console.log(idade);
+      }
+  }
+  var pessoa = pessoa(33);
+  pessoa();
+```
+
+```js
+function add() {
+    var numero = 1;
+    return function () {
+        console.log(numero + 1);
+    }
+}
+var soma = add();
+soma();
+soma();
+soma();
+```
 
 
 [Voltar ao Índice](#indice)
