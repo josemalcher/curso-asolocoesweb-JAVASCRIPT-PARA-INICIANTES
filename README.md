@@ -195,6 +195,46 @@ soma();
 
 ## <a name="parte7">07 - Callbacks</a>
 
+```js
+    /*setTimeout(function () {
+        console.log("Depois de 3 segundos");
+    }, 3000);*/
+    function teste() {
+        console.log("Depois de 3 segundos");
+    }
+    setTimeout(teste, 3000);
+```
+
+```js
+    function pessoa(callbackteste) {
+        console.log(callbackteste());
+}
+
+    pessoa(function () {
+        console.log("PESSOA CALLBACK");
+    });
+```
+
+```js
+
+    /*setInterval(function () {
+        console.log("teste");
+    }, 3000);*/
+
+    function soma() {
+        var i = 0;
+        return function () {
+            i += 1;
+            console.log("Somando: " + i);
+        }
+    }
+
+    var soma = soma();
+    setInterval(soma, 2000);
+
+```
+
+
 
 [Voltar ao Índice](#indice)
 

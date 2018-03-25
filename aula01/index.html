@@ -8,17 +8,20 @@
 
 <script>
 
-function add() {
-    var numero = 1;
-    return function () {
-        console.log(numero + 1);
-    }
-}
-var soma = add();
-soma();
-soma();
-soma();
+    /*setInterval(function () {
+        console.log("teste");
+    }, 3000);*/
 
+    function soma() {
+        var i = 0;
+        return function () {
+            i += 1;
+            console.log("Somando: " + i);
+        }
+    }
+
+    var soma = soma();
+    setInterval(soma, 2000);
 
 </script>
 </body>
