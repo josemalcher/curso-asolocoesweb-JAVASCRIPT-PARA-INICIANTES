@@ -9,12 +9,18 @@
 <a href="" id="alink">Link1</a>
 
 <script>
-    //var btn = document.querySelector("#alink");
-    var btn = document.getElementById("alink");
-    btn.onclick = function () {
-        console.log("LINK OK");
-        return false; // para não atualizar a página
-    }
+
+    var pessoa = function () {
+        console.log("Função Anônima!");
+
+    };
+    pessoa();
+
+    //função auto-executa
+    (function () {
+        console.log("Auto Executou")
+    })();
+
 </script>
 </body>
 </html>

@@ -141,12 +141,26 @@ DOM - https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM
 
 ## <a name="parte5"> 05 - Funções</a>
 
+```js
+    var pessoa = function () {
+        console.log("Função Anônima!");
+
+    };
+    pessoa();
+
+    //função auto-executa
+    (function () {
+        console.log("Auto Executou")
+    })();
+
+```
 
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte6">06 - Closures</a>
+
 
 
 [Voltar ao Índice](#indice)
