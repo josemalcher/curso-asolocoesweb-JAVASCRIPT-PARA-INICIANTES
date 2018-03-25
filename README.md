@@ -98,6 +98,9 @@ https://www.asolucoesweb.com.br/detalhes/javascript-para-iniciantes
 
 ## <a name="parte3">03 - Bom e Dom </a>
 
+BOM - 
+
+DOM - https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM
 
 [Voltar ao Índice](#indice)
 
@@ -105,6 +108,32 @@ https://www.asolucoesweb.com.br/detalhes/javascript-para-iniciantes
 
 ## <a name="parte4">04 - Seletores Html</a>
 
+- var div = document.getElementById("divid");
+- var div = document.getElementsByClassName("div");
+- var btn = document.querySelector("#alink");
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 01</title>
+</head>
+<body>
+<div id="divid">Dentro da DIV id</div>
+<a href="" id="alink">Link1</a>
+
+<script>
+    //var btn = document.querySelector("#alink");
+    var btn = document.getElementById("alink");
+    btn.onclick = function () {
+        console.log("LINK OK");
+        return false; // para não atualizar a página
+    }
+</script>
+</body>
+</html>
+```
 
 [Voltar ao Índice](#indice)
 

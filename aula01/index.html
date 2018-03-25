@@ -5,22 +5,16 @@
     <title>Aula 01</title>
 </head>
 <body>
+<div id="divid">Dentro da DIV id</div>
+<a href="" id="alink">Link1</a>
+
 <script>
-
-    var idade = 34; //global
-    function idadePEssoa() {
-        var idade = 24; //local
-        console.log(idade);
+    //var btn = document.querySelector("#alink");
+    var btn = document.getElementById("alink");
+    btn.onclick = function () {
+        console.log("LINK OK");
+        return false; // para não atualizar a página
     }
-
-    idadePEssoa();
-
-    nomePessoa = "jose"; // "super-global" -  Sempre com "var"
-    function nome() {
-        console.log(nomePessoa);
-    }
-    nome();
-
 </script>
 </body>
 </html>
