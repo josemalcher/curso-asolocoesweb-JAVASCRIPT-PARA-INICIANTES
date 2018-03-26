@@ -340,6 +340,19 @@ window.onload = function () {
 
 ## <a name="parte11"> 11 - Arrays </a>
 
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+```js
+window.onload = function () {
+    var nome = ['jose', 'maria','vanilda'];
+    //console.dir(nome);
+    //console.log(nome.splice(0,2));
+
+    nome.push('joão');
+    nome.push('carla'); //adiciona
+    nome.pop(); //remove
+}
+```
 
 [Voltar ao Índice](#indice)
 
