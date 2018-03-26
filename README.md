@@ -257,6 +257,75 @@ soma();
 
 ## <a name="parte9"> 09 - Eventos parte 1</a>
 
+- https://developer.mozilla.org/en-US/docs/Web/Events
+
+```js
+var btn = document.querySelector("#btn-teste");
+
+/*btn.onclick = function() {
+    teste();
+};*/
+btn.addEventListener('click', function () {
+    teste();
+});
+
+function teste() {
+    console.log("Teste");
+};
+```
+
+```js
+var campo = document.querySelector("#campo");
+
+campo.addEventListener("focusout", function () {
+    console.log("this.value");
+});
+
+function teste() {
+    console.log("Teste");
+}
+```
+
+- aula01/js/main.js
+
+```js
+function event(target,event,callback) {
+    target.addEventListener(event, callback);
+}
+```
+
+```js
+var input = document.querySelector("#campo1");
+
+event(input,'focusout', function () {
+    console.log("teste");
+});
+```
+
+```html
+<video src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" id="video"></video>
+<button id="btn-play" type="submit">Play Video</button>
+<button id="btn-pause" type="submit">PAUSE</button>
+
+```
+
+```js
+window.onload = function () {
+
+    var btn_play = document.getElementById("btn-play");
+    var btn_pause = document.getElementById("btn-pause");
+    var video = document.getElementById("video");
+
+    btn_play.addEventListener('click', function () {
+        video.play();
+    });
+
+    btn_pause.addEventListener('click', function () {
+        video.pause();
+    });
+
+}
+```
 
 [Voltar ao Índice](#indice)
 
