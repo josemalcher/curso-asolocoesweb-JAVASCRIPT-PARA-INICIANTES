@@ -1,9 +1,15 @@
 window.onload = function () {
-    var nome = ['jose', 'maria','vanilda'];
-    //console.dir(nome);
-    //console.log(nome.splice(0,2));
 
-    nome.push('joão');
-    nome.push('carla'); //adiciona
-    nome.pop(); //remove
+    var nomes = ['jose', 'karla', 'maria'];
+
+    for (var i = 0; i < nomes.length ; i++) {
+        console.log(nomes[i]);
+    }
+
+    var i = 0;
+    while (i < nomes.length) {
+        console.log(nomes[i]);
+        i++;
+    }
+
 }

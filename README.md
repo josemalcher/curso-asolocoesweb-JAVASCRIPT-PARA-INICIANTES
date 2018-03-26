@@ -351,6 +351,8 @@ window.onload = function () {
     nome.push('joão');
     nome.push('carla'); //adiciona
     nome.pop(); //remove
+    
+   var nomes2 = new Array('jose','maria','...');
 }
 ```
 
@@ -360,12 +362,44 @@ window.onload = function () {
 
 ## <a name="parte12">12 - Loopings </a>
 
+```js
+window.onload = function () {
+
+    var nomes = ['jose', 'karla', 'maria'];
+
+    nomes.forEach(function (nome) {
+        console.log(nome);
+    })
+
+}
+
+```
+
+```js
+window.onload = function () {
+
+    var nomes = ['jose', 'karla', 'maria'];
+
+    for (var i = 0; i < nomes.length ; i++) {
+        console.log(nomes[i]);
+    }
+
+    var i = 0;
+    while (i < nomes.length) {
+        console.log(nomes[i]);
+        i++;
+    }
+
+}
+```
+
 
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte13">13 - Condicionais </a>
+
 
 
 [Voltar ao Índice](#indice)
