@@ -242,6 +242,14 @@ soma();
 
 ## <a name="parte8">08 - Funções assíncronas </a>
 
+```js
+    //Exenplo simples!
+    setTimeout(function () {
+        console.log("Etapa 1");
+    }, 2000);
+
+    console.log("Etapa 2");
+```
 
 [Voltar ao Índice](#indice)
 

@@ -8,20 +8,11 @@
 
 <script>
 
-    /*setInterval(function () {
-        console.log("teste");
-    }, 3000);*/
+    setTimeout(function () {
+        console.log("Etapa 1");
+    }, 2000);
 
-    function soma() {
-        var i = 0;
-        return function () {
-            i += 1;
-            console.log("Somando: " + i);
-        }
-    }
-
-    var soma = soma();
-    setInterval(soma, 2000);
+    console.log("Etapa 2");
 
 </script>
 </body>
