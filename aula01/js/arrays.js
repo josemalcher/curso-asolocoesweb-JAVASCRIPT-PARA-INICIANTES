@@ -1,15 +1,14 @@
 window.onload = function () {
 
-    var nomes = ['jose', 'karla', 'maria'];
+    var idade = 40;
 
-    for (var i = 0; i < nomes.length ; i++) {
-        console.log(nomes[i]);
+    if(idade < 20) {
+        console.log("idade menor que 20");
+    }else{
+        console.log("idade maior que 20");
     }
 
-    var i = 0;
-    while (i < nomes.length) {
-        console.log(nomes[i]);
-        i++;
-    }
+    var resultado = (idade <= 30) ? "menor que 30": "Maior que 30" ;
+    console.log(resultado);
 
 }
